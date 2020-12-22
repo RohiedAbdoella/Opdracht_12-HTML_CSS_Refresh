@@ -1,0 +1,82 @@
+.container  {
+            border: 2px solid grey;
+            width: 400px;       
+            display: grid;
+            grid-gap: 1px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                                "h h h h h h h h h a a a"
+                                "m m m m m m m m m a a a"
+                                "m m m m m m m m m . . ."
+                                "f f f f f f f f f f f f";
+            }
+
+.header {
+        grid-area: h;
+        }
+
+.main {
+        grid-area: m;
+        }
+
+.aside {
+        grid-area: a;
+        }
+            
+.footer {
+        grid-area: f;
+        }
+
+h1 {
+    margin: 10px;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    }   
+
+h2 {
+    margin: 10px;
+    font-size: 12px;
+    line-height: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    }   
+
+p   {
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    } 
+
+hr  {
+    color: lightgrey;
+    }
+
+footer  {
+        display: flex;
+        justify-content: center;
+        font-family: 'Raleway', sans-serif;
+        }
+
+ul li  {
+            display: inline;
+            list-style-type: none;
+            }
+
+.approve    {
+            border: 1px solid green;
+            color: green;
+            padding: 15px;
+            }
+
+.decline    {
+            border: 1px solid red;
+            color: red;
+            padding: 15px;
+            }
+
+aside {
+    margin:10px;
+    padding: 10px
+}
